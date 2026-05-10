@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ADD8E6;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+header h2 {
+    font-size: 1.2em;
+    color: #555;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #333;
+}
+
+nav button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s;
+}
+
+nav button:hover {
+    background-color: #45a049;
+}
+
+.section-toggle {
+    background: none;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 0;
+}
+
+.section-toggle::after {
+    content: '▼';
+    float: right;
+    transition: transform 0.2s ease;
+}
+
+.section-toggle[aria-expanded="false"]::after {
+    content: '▶';
+}
+
+.section-body {
+    margin-top: 10px;
+}
+
+.section-body[hidden] {
+    display: none;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.social-media {
+    margin-top: 15px;
+}
+
+.social-media a {
+    color: #4CAF50;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
